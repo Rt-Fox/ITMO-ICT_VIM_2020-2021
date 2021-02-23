@@ -1,0 +1,74 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\linespread{1.25}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\let\paragraph\ignorespaces
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{graphicx}
+
+
+\begin{document}
+	
+\begin{titlepage}
+	
+\begin{center}
+	\large Университет ИТМО\\[5cm]
+	\LARGE Практическая работа №1\\
+	\normalsize по дисциплине <<Визуализация и моделирование>>\\[5cm]
+\end{center}
+\begin{flushright}
+		\begin{minipage}{0.6\textwidth}
+		\begin{flushleft}
+			\large
+			\singlespacing 
+			\textbf{Автор:} Сулейманов Руслан Имранович
+			\textbf{Поток:} 1.1
+			\textbf{Группа:} к3241
+			\textbf{Факультет:} ИКТ\\
+			\textbf{Преподаватель:} Чернышева А.В.
+		\end{flushleft}
+	\end{minipage}
+\end{flushright}
+
+\vfill
+
+\begin{center}
+	{\large Санкт-Петербург, \the\year{ г.}}
+\end{center}
+ 
+\end{titlepage}
+\normalsize
+
+Краткое описание датасета
+
+MNIST - Датасет рукописных цифр. 60 000 тренировочных изображений и 10 000 тестовых изображений.
+Датасет состоит из обучающей и тестовой выборки.
+
+Описание данных, хранящихся в датасете 
+
+
+\begin{tabular}{c|c|c}
+ название & какие данные & тип \\
+\hline
+offset & 4ех значное число & integer \\
+type & опичания типа значения & str  \\
+value & хранится само значение & 32 bit integer  \\
+description & описание значения & str  \\
+\end{tabular}
+
+
+Благодаря этому датосету можно научить свою нейронку распознаванию:
+
+а) мед. почерка.
+
+б) решению капчи.
+
+в) ну или в самом простом варианте, чтению рукаписного текста
+
+
+\end{document}
